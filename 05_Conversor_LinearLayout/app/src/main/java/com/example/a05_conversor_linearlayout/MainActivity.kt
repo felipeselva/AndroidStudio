@@ -11,25 +11,39 @@ class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
 
 
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         enableEdgeToEdge()
         setContentView(binding.root)
 
-        binding.buttonConverter.setOnClickListener{
+        binding.buttonDolar.setOnClickListener {
+            escrever(0.18)
+
+        }
+        binding.buttonEuro.setOnClickListener {
+            escrever(0.17)
+        }
+        binding.buttonPesos.setOnClickListener {
+            escrever(7.69)
+
+        }
+
+        private fun escrever(taxa: Double) {
+
             val reais = binding.editReais.text.toString().trim()
 
-            if(!reais.isEmpty()) {
-                val dolar = String.format("%.2f",reais.toDouble() * 0.18)
-                binding.textDolares.setText("${dolar}$")
-                Toast.makeText(applicationContext, "O valor em dolares é ${dolar}$", Toast.LENGTH_LONG).show()
+            if (!reais.isEmpty()) {
+                val resultado = String.format("%.2f", reais.toDouble() * taxa)
+                Toast.makeText(
+                    applicationContext,
+                    "O valor em Dolares é ${resultado}$",
+                    Toast.LENGTH_LONG
+                ).show()
             } else {
-                binding.textDolares.text = "Valor não inserido"
+
                 Toast.makeText(applicationContext, "Valor não inserido", Toast.LENGTH_SHORT).show()
             }
         }
-
     }
 }

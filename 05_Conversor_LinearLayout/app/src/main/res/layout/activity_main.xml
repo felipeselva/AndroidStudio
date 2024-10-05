@@ -8,30 +8,56 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Conversor de Moeda"
+        android:layout_margin="30sp"
+        android:textSize="30sp"/>
+
+
 
     <EditText
         android:id="@+id/edit_reais"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="70dp"
         android:gravity="center"
         android:hint="Insira um Valor em Reais"
         android:inputType="number|numberDecimal|numberSigned" />
 
-    <Button
-        android:id="@+id/button_converter"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="40dp"
-        android:text="Converter" />
+        android:orientation="horizontal"
+        android:gravity="center">
+
+    <Button
+        android:id="@+id/button_dolar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="dolar" />
+
+    <Button
+        android:id="@+id/button_euro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="euro"
+        android:layout_marginHorizontal="5dp"/>
+
+    <Button
+        android:id="@+id/button_pesos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="peso" />
+    </LinearLayout>
 
     <TextView
-        android:id="@+id/text_dolares"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:gravity="center"
-        android:text=""
-        android:textSize="50sp" />
+        android:text="Desenvolvido por Felipe Selva"
+        android:textSize="20sp" />
 
 
 </LinearLayout>
