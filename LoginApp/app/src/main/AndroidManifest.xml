@@ -12,18 +12,26 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.LoginApp"
         tools:targetApi="31">
-
         <activity
-            android:name=".MainActivity"
-            android:exported="true"
-            android:label="@string/app_name"
-            android:theme="@style/Theme.AppCompat.Light.DarkActionBar">
+            android:name=".SplashScreenActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity
+            android:name=".LoginErradoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LoginOkActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false"/>
+
     </application>
 
 </manifest>
