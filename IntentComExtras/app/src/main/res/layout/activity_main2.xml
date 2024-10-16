@@ -11,8 +11,22 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Olá"
+        android:text="Qual o seu nome?"
         android:textSize="40sp"
-        android:id="@+id/text_nome"/>
+        android:id="@+id/text_name"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="OK"
+        android:id="@+id/button_ok"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edit_nome"
+        android:gravity="center"
+        android:textSize="20sp"/>
+
+
 
 </LinearLayout>

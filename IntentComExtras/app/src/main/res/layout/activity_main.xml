@@ -8,17 +8,18 @@
     tools:context=".MainActivity"
     android:orientation="vertical">
 
-    <EditText
+    <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
         android:textSize="30sp"
+        android:text="Ola Utilizador"
         android:id="@+id/edit_nome"/>
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="OK"
-        android:id="@+id/button_ok"/>
+        android:text="Mudar o nome"
+        android:id="@+id/button_mudarNome"/>
 
 </LinearLayout>
