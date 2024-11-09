@@ -21,4 +21,5 @@ dependencyResolutionManagement {
 
 rootProject.name = "Listas"
 include(":app")
+include(":app")
  
