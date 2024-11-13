@@ -19,7 +19,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "Listas"
+rootProject.name = "GMapsExemplo"
 include(":app")
-include(":app")
- 
+include(":gmapsactivity")
