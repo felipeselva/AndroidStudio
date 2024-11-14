@@ -19,6 +19,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "Audio"
+rootProject.name = "ClicloVidaActivity"
 include(":app")
-include(":app")
+ 
