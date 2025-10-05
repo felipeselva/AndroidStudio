@@ -29,3 +29,9 @@ Estes são os principais assuntos que estou aprendendo ao longo das aulas:
 * E muito mais!
 
 ## 📂 Organização do Repositório
+
+Estou organizando o repositório em pastas. Cada uma corresponde a um projeto ou a um conjunto de aulas, para que eu possa consultar facilmente o que já estudei.
+
+## ✨ Agradecimentos
+
+Deixo aqui meu agradecimento ao **Bruno Santos** por criar e compartilhar um conteúdo tão valioso para a comunidade de desenvolvedores.
